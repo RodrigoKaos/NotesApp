@@ -13,11 +13,7 @@ class App extends Component {
     };
   }
   render() {
-    return (
-      <div>
-        <NoteList list={this.state.list} />
-      </div>
-    );
+    return <NoteList list={this.state.list} />;
   }
 }
 
