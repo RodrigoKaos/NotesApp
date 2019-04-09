@@ -6,7 +6,11 @@ const NoteList = props => {
   let list = props.list.map((el, index) => {    
     return <NoteItem key={index} status={el.status} text={el.text} />
   });
-  return (<div>{list}</div>);
+  return (
+    <div>
+      <ul>{list}</ul>
+    </div>
+  );
 };
 
 export default NoteList;

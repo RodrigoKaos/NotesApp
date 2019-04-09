@@ -1,11 +1,6 @@
 import React from 'react';
 import './index.css';
 
-const NoteItem = props => {
-  console.log(props);
-  return (
-    <div className={props.status}>{props.text}</div>
-  );
-};
+const NoteItem = props => <li className={props.status}>{props.text}</li>;
 
 export default NoteItem;
